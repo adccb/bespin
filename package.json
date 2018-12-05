@@ -1,0 +1,25 @@
+{
+  "name": "bespin",
+  "version": "0.0.1",
+  "description": "a cloud city development internal javascript library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxtetrachord/bespin.git"
+  },
+  "keywords": [
+    "javascript",
+    "utility",
+    "cloud",
+    "city"
+  ],
+  "author": "autumn crossan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mxtetrachord/bespin/issues"
+  },
+  "homepage": "https://github.com/mxtetrachord/bespin#readme"
+}
