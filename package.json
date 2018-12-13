@@ -2,9 +2,13 @@
   "name": "bespin",
   "version": "0.0.1",
   "description": "a cloud city development internal javascript library",
-  "main": "index.js",
+  "main": "src/index.elm",
   "scripts": {
-    "test": "jest"
+    "test": "elm-test",
+    "test:once": "npm run test",
+    "test:watch": "elm-test --watch",
+    "build": "webpack",
+    "dev": "webpack --mode=development --watch --colors --progress"
   },
   "repository": {
     "type": "git",
@@ -13,13 +17,27 @@
   "keywords": [
     "javascript",
     "utility",
-    "cloud",
-    "city"
+    "cloud city"
   ],
   "author": "autumn crossan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mxtetrachord/bespin/issues"
   },
-  "homepage": "https://github.com/mxtetrachord/bespin#readme"
+  "homepage": "https://github.com/mxtetrachord/bespin#readme",
+  "devDependencies": {
+    "elm": "^0.19.0-bugfix2",
+    "elm-test": "^0.19.0-rev3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "/.*\\.spec.(ts|tsx|js)$"
+  }
 }
